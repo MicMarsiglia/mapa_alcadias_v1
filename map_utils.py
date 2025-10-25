@@ -22,7 +22,7 @@ def load_geojson(url, local_backup="limite-de-las-alcaldias.json"):
             
 def render_folium_map(df, delegaciones, show_points=True, show_heatmap=True):
     """Construye un mapa Folium con límites y capas."""
-    m = folium.Map(location=[19.4326, -99.1332], zoom_start=12, tiles="Cartodb positron")
+    m = folium.Map(location=[19.4326, -99.1332], zoom_start=11, tiles="Cartodb positron")
 
     folium.GeoJson(
         delegaciones,
